@@ -1,0 +1,142 @@
+@font: 'Circle', sans-serif;
+@gilroy: 'Circle', sans-serif;
+@black: #333;
+@orange: #fe5000;
+.landing2 {
+  position: relative;
+  overflow: hidden;
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: @font;
+  color: @black;
+  .inner {
+    width: 1220px;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    color: @black;
+    transition: 0.3s;
+    &:hover {
+      color: @orange;
+    }
+  }
+  .button {
+    display: block;
+    text-align: center;
+    font: 22px/62px @font;
+    border-radius: 6px;
+    transition: 0.3s;
+    &.apply {
+      color: #fff;
+      background: @orange;
+      &:hover {
+        color: @orange;
+        background: #fff;
+        box-shadow: 0 5px 5px rgba(51, 51, 51, 0.3);
+      }
+    }
+  }
+  header {
+    .header {
+      position: absolute;
+      width: 100%;
+      padding: 40px;
+      &-logo {
+        float: left;
+        width: 270px;
+        a {
+          display: block;
+          height: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      &-contacts {
+        float: right;
+        max-width: 220px;
+        text-align: right;
+        font: 13px/2 @font;
+        .phone {
+          font: 800 24px/1.3 @font;
+        }
+        .icon {
+          display: none;
+          width: 25px;
+          height: 25px;
+          background: url(../img/icon_phone.svg) no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  .top_banner {
+    background: url(../img/top_banner_img1.jpg) center no-repeat;
+    background-size: cover;
+    .inner {
+      padding-top: 225px;
+      padding-bottom: 120px;
+      .top_banner {
+        &-title {
+          font: 700 70px/1.1 @gilroy;
+        }
+        &-block {
+          margin-top: 40px;
+          font-size: 0;
+          &-item {
+            display: inline-block;
+            margin-right: 30px;
+            &:last-child {
+              margin-right: 0;
+            }
+            &-image {
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 15px;
+            }
+            &-desc {
+              display: inline-block;
+              vertical-align: middle;
+              max-width: 180px;
+              font: 700 18px/1.3 @font;
+            }
+          }
+        }
+        &-button {
+          width: 360px;
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+  footer {
+    background: @black;
+    .inner {
+      padding-top: 35px;
+      padding-bottom: 15px;
+      font: 12px/1.1 @font;
+      color: #fff;
+      .footer {
+        &-line {
+          margin-top: 30px;
+          &-copyright {
+            float: left;
+          }
+          &-made_by {
+            float: right;
+            a {
+              text-decoration: underline;
+              color: #fff;
+              &:hover {
+                text-decoration: none;
+                color: @orange;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

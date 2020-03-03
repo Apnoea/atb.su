@@ -1,0 +1,189 @@
+@font: 'Circle', sans-serif;
+@gilroy: 'Circle', sans-serif;
+
+@black: #333;
+@orange: #fe5000;
+
+@media (max-width: 1239px) {
+  .landing2 {
+    .inner {
+      width: 960px;
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  .landing2 {
+    .inner {
+      width: 768px;
+      padding: 0 15px;
+
+      .button {
+        font: 18px/57px @font;
+      }
+    }
+
+
+
+    header {
+      .header {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &-logo {
+          width: 200px;
+        }
+
+        &-contacts {
+          max-width: 220px;
+          font-size: 12px;
+          line-height: 1.5;
+
+          .phone {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .top_banner {
+      background: url(../img/top_banner_img1.jpg) 70% center no-repeat;
+      background-size: cover;
+
+      .inner {
+        padding-top: 150px;
+
+        .top_banner {
+          &-title {
+            max-width: 320px;
+            font-size: 60px;
+          }
+
+          &-block {
+            margin-top: 25px;
+
+            &-item {
+              display: block;
+              margin-right: 0;
+              margin-bottom: 20px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              &-image {
+                width: 35px;
+                height: 35px;
+                text-align: center;
+
+                img {
+                  max-width: 100%;
+                  max-height: 100%;
+                }
+              }
+
+              &-desc {
+                max-width: 240px;
+              }
+            }
+          }
+
+          &-button {
+            width: 315px;
+            margin-top: 55px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 787px) {
+  .landing2 {
+    .inner {
+      width: 100%;
+      padding: 0 10px;
+
+      .button {
+        font: 18px/57px @font;
+      }
+    }
+
+
+
+    header {
+      .header {
+        padding: 20px 10px;
+
+        &-logo {
+          width: 150px;
+        }
+
+        &-contacts {
+          .txt {
+            display: none;
+          }
+
+          .icon {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .top_banner {
+      background: url(../img/top_banner_img1_mob.jpg) 60% no-repeat;
+      background-size: cover;
+
+      .inner {
+        padding-top: 85px;
+        padding-bottom: 25px;
+
+        .top_banner {
+          &-title {
+            max-width: 220px;
+            font-size: 40px;
+          }
+
+          &-block {
+            margin-top: 20px;
+
+            &-item {
+              &-desc {
+                max-width: 160px;
+                font-size: 15px;
+              }
+            }
+          }
+
+          &-button {
+            width: 100%;
+            margin-top: 140px;
+          }
+        }
+      }
+    }
+
+    footer {
+      .inner {
+        padding-bottom: 20px;
+        font: 11px/1.1 @font;
+
+        .footer {
+          &-line {
+            margin-top: 30px;
+
+            &-copyright {
+              float: none;
+            }
+
+            &-made_by {
+              float: none;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
