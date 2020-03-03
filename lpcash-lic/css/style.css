@@ -42,6 +42,7 @@
   position: absolute;
   width: 100%;
   padding: 40px;
+  z-index: 1;
 }
 .landing2 header .header-logo {
   float: left;

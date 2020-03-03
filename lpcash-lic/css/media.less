@@ -47,7 +47,7 @@
     }
 
     .top_banner {
-      background: url(../img/top_banner_img1.jpg) 70% center no-repeat;
+      background: url(../img/top_banner_img1.jpg) 75% center no-repeat;
       background-size: cover;
 
       .inner {
@@ -132,8 +132,39 @@
     }
 
     .top_banner {
-      background: url(../img/top_banner_img1_mob.jpg) 60% no-repeat;
       background-size: cover;
+      @media (max-width: 520px) {
+        position: relative;
+        background: url(../img/top_banner_img1.jpg) 0 no-repeat;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 235px;
+          height: 220px;
+          transform: translateX(-50%);
+          background: url(../img/top_banner_img1_mob.png) no-repeat;
+          background-size: contain;
+        }
+        .inner {
+          .top_banner {
+            &-title {
+              margin: 0 auto;
+              text-align: center;
+            }
+            &-block {
+              max-width: 280px;
+              margin: 20px auto 0;
+              &-item {
+                &-desc {
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
 
       .inner {
         padding-top: 85px;
@@ -157,6 +188,7 @@
           }
 
           &-button {
+            position: relative;
             width: 100%;
             margin-top: 140px;
           }
